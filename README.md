@@ -8,6 +8,8 @@ Proyek kecil ini mendemonstrasikan model sederhana untuk pemesanan kopi:
 - `Main` — entry point yang mendemokan pemakaian kelas-kelas di atas.
 
 ## Struktur proyek
+
+```
 /project-root
 ├─ src/
 │ └─ main/
@@ -18,7 +20,7 @@ Proyek kecil ini mendemonstrasikan model sederhana untuk pemesanan kopi:
 │ └─ Purchasable.java
 ├─ pom.xml (opsional bila menggunakan Maven)
 └─ README.md
-
+```
 
 ## Tujuan Task 2
 1. Membuat dokumentasi kode menggunakan **JavaDoc** untuk setiap kelas dan method.  
