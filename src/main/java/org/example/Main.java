@@ -1,20 +1,18 @@
 package org.example;
 
-/**
- * Small demo entry point that constructs an {@link OrderInfo}, creates a {@link CoffeeOrder}
- * and prints a receipt. This class demonstrates usage of the domain classes.
- */
 public class Main {
-    /**
-     * Program entry point.
-     *
-     * @param args command line arguments (not used)
-     */
     public static void main(String[] args) {
-        // Use OrderInfo parameter object for clarity
-        OrderInfo info = new OrderInfo("Aisha", 3, 4.50, true);
-        CoffeeOrder order = new CoffeeOrder(info);
+        OrderInfo aisha = new OrderInfo("Aisha", 3, 4.50, true);
+        OrderInfo budi = new OrderInfo("Budi", 2, 5.00, false);
 
-        order.printReceipt();
+        CoffeeOrder order1 = new CoffeeOrder(aisha);
+        CoffeeOrder order2 = new CoffeeOrder(budi);
+
+        OrderManagerT manager = new OrderManagerT();
+        manager.addOrder(order1);
+        manager.addOrder(order2);
+
+        manager.printAllReceipts();
+        manager.printReport();
     }
 }
